@@ -1,0 +1,13 @@
+# EqualizerAPO macOS configuration
+#
+# The macOS host currently supports Preamp, GraphicEQ, and common biquad
+# Filter commands. The original Windows-only commands are reported as
+# warnings instead of being silently ignored.
+
+Preamp: -3 dB
+Filter: ON LS Fc 105 Hz Gain 2 dB Q 0.707
+Filter: ON PK Fc 1000 Hz Gain 3 dB Q 1.2
+Filter: ON HS Fc 8000 Hz Gain -2 dB Q 0.707
+
+# GraphicEQ bands use "frequency gain" pairs separated by semicolons.
+# GraphicEQ: 31.5 2; 63 1; 125 0; 250 -1; 500 0; 1000 1
